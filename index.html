@@ -8,20 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Hind:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Outfit', sans-serif; scroll-behavior: smooth; }
-        .hindi-simple { font-family: 'Hind', sans-serif; }
+        .hindi-modern { font-family: 'Hind', sans-serif; }
+        
         .text-gradient {
             background: linear-gradient(to right, #1e293b, #2563eb);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        /* Golden Text Effect */
-        .text-gold {
-            color: #D4AF37;
-            background: linear-gradient(to bottom, #f7e08a 0%, #d4af37 50%, #b8860b 100%);
+
+        /* Poori Hindi Line ke liye Naya Professional Gradient */
+        .hindi-line-gradient {
+            background: linear-gradient(to right, #1e40af, #0891b2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+            display: inline-block;
         }
+
         .service-card { transition: all 0.3s ease; }
         .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(37,99,235,0.1); border-color: #2563eb; }
     </style>
@@ -47,7 +49,7 @@
     <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1629909605124-425955af3307?q=80&w=2000&auto=format&fit=crop" 
-                 class="w-full h-full object-cover" alt="Modern Dental Clinic">
+                 class="w-full h-full object-cover opacity-80" alt="Modern Dental Clinic">
             <div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-transparent"></div>
         </div>
 
@@ -59,14 +61,14 @@
                 </h1>
                 
                 <div class="mb-8">
-                    <p class="hindi-simple text-3xl md:text-4xl font-bold text-gold tracking-wide">
+                    <h2 class="hindi-modern text-3xl md:text-5xl font-bold hindi-line-gradient">
                         आपकी मुस्कुराहट हमारी प्राथमिकता है।
-                    </p>
-                    <div class="w-24 h-1 bg-gold rounded-full mt-2 opacity-50"></div>
+                    </h2>
+                    <div class="w-full h-1 bg-gradient-to-r from-blue-600/20 to-transparent mt-2 rounded-full"></div>
                 </div>
                 
                 <p class="text-lg text-slate-600 mb-10 leading-relaxed">
-                    Experience the most advanced dental treatments with our expert team.
+                    Experience the most advanced dental treatments with our expert team of professionals.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -79,13 +81,13 @@
         </div>
     </section>
 
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white border-y border-slate-100">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=800&auto=format&fit=crop" class="rounded-2xl h-48 w-full object-cover shadow-md hover:scale-105 transition duration-300" alt="Clinic Interior">
                 <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=800&auto=format&fit=crop" class="rounded-2xl h-48 w-full object-cover shadow-md hover:scale-105 transition duration-300" alt="Modern Tools">
                 <img src="https://images.unsplash.com/photo-1445527815219-ecbfec67492e?q=80&w=800&auto=format&fit=crop" class="rounded-2xl h-48 w-full object-cover shadow-md hover:scale-105 transition duration-300" alt="Consultation">
-                <div class="bg-blue-600 rounded-2xl h-48 flex flex-col items-center justify-center p-4 text-white text-center shadow-lg shadow-blue-100">
+                <div class="bg-blue-600 rounded-2xl h-48 flex flex-col items-center justify-center p-4 text-white text-center shadow-lg shadow-blue-100 hover:bg-blue-700 transition">
                     <span class="text-3xl mb-2">📍</span>
                     <a href="https://maps.app.goo.gl/uXxAvmgLdeysSHG17?g_st=aw" target="_blank" class="font-bold hover:underline">Find Us on Map</a>
                 </div>
@@ -140,11 +142,11 @@
             <h2 class="text-2xl font-bold mb-4">Gupta Dental Care</h2>
             <p class="text-slate-400 mb-6 italic">"Expert treatment you can trust."</p>
             <div class="flex flex-wrap justify-center gap-6 mb-8 text-sm uppercase tracking-widest font-bold">
-                <a href="tel:+919984847807" class="hover:text-blue-400">Call Now</a>
+                <a href="tel:+919984847807" class="hover:text-blue-400 transition">Call Now</a>
                 <span>•</span>
-                <a href="https://maps.app.goo.gl/uXxAvmgLdeysSHG17?g_st=aw" target="_blank" class="hover:text-blue-400">Google Maps</a>
+                <a href="https://maps.app.goo.gl/uXxAvmgLdeysSHG17?g_st=aw" target="_blank" class="hover:text-blue-400 transition">Google Maps</a>
                 <span>•</span>
-                <a href="https://wa.me/919984847807" target="_blank" class="hover:text-blue-400">WhatsApp</a>
+                <a href="https://wa.me/919984847807" target="_blank" class="hover:text-blue-400 transition">WhatsApp</a>
             </div>
             <div class="text-xs text-slate-500">© 2025 Gupta Dental Care. All rights reserved.</div>
         </div>
@@ -152,3 +154,4 @@
 
 </body>
 </html>
+
