@@ -6,38 +6,35 @@
     <title>Gupta Dental Care</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-50">
 
     <section 
       class="relative h-screen bg-cover bg-center flex items-center justify-center"
       style="background-image: url('https://images.unsplash.com/photo-1629909605124-425955af3307?auto=format&fit=crop&q=80&w=2000');"
     >
-      <div class="absolute inset-0 bg-white bg-opacity-80"></div>
+      <div class="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
 
-      <div class="relative z-10 flex flex-col items-center justify-center text-center px-4 max-w-4xl">
-
-        <h1 class="text-4xl md:text-7xl font-bold text-gray-900 mb-4">
+      <div class="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl">
+        
+        <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 mb-4 tracking-tight">
           Gupta <span class="text-blue-600">Dental</span> Care
         </h1>
 
-        <h2 class="text-xl md:text-2xl text-teal-600 font-semibold mb-8">
+        <h2 class="text-xl md:text-3xl text-teal-600 font-medium mb-10">
           Healthy Smiles, Trusted Care
         </h2>
 
-        <div class="flex flex-col md:flex-row gap-4">
-          <button class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition shadow-lg">
+        <div class="flex flex-col md:flex-row gap-4 w-full md:w-auto">
+          <button class="bg-blue-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition shadow-xl active:scale-95">
             Book Appointment
           </button>
 
-          <a href="tel:+919999999999" class="border-2 border-teal-600 text-teal-600 px-8 py-4 rounded-lg font-bold hover:bg-teal-600 hover:text-white transition text-center">
+          <a href="tel:+919999999999" class="border-2 border-slate-900 text-slate-900 px-10 py-4 rounded-full font-bold text-lg hover:bg-slate-900 hover:text-white transition text-center active:scale-95">
             Call Doctor
           </a>
 
-          <a 
-            href="https://wa.me/919999999999"
-            class="bg-green-500 text-white px-8 py-4 rounded-lg flex items-center justify-center gap-2 hover:bg-green-600 transition shadow-lg"
-          >
-            <span>📱</span> WhatsApp Now
+          <a href="https://wa.me/919999999999" target="_blank" class="bg-[#25D366] text-white px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 hover:bg-green-600 transition shadow-xl active:scale-95">
+            WhatsApp Now
           </a>
         </div>
       </div>
@@ -45,3 +42,4 @@
 
 </body>
 </html>
+
