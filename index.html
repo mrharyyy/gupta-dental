@@ -7,106 +7,125 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Outfit', sans-serif; }
-        .service-card {
-            transition: all 0.3s ease;
-            border: 1px solid rgba(0,0,0,0.05);
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-            border-color: #2563eb;
-        }
+        body { font-family: 'Outfit', sans-serif; scroll-behavior: smooth; }
         .text-gradient {
             background: linear-gradient(to right, #1e293b, #2563eb);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .service-card { transition: all 0.3s ease; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(37,99,235,0.1); border-color: #2563eb; }
     </style>
 </head>
-<body class="bg-[#f8fafc]">
+<body class="bg-slate-50">
 
-    <section class="relative min-h-[90vh] flex items-center justify-center pt-10">
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 py-4 shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="[attachment_0](attachment)" alt="Logo" class="h-12 w-12 rounded-lg">
+                <span class="text-2xl font-extrabold text-slate-800 tracking-tight">GUPTA <span class="text-blue-600">DENTAL</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 font-medium text-slate-600">
+                <a href="#" class="hover:text-blue-600">Home</a>
+                <a href="#services" class="hover:text-blue-600">Services</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://www.nationaldentalcare.in/wp-content/uploads/2023/10/Dental-hospital-in-Madinaguda.webp" 
-                 class="w-full h-full object-cover opacity-20" alt="Clinic">
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#f8fafc]"></div>
+            <img src="[attachment_1](attachment)" 
+                 class="w-full h-full object-cover" alt="Modern Dental Clinic">
+            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
         </div>
 
-        <div class="relative z-10 container mx-auto px-6 text-center">
-            <span class="bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block">
-                Professional Dental Services
-            </span>
-            <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tight">
-                Gupta <span class="text-gradient">Dental Care</span>
-            </h1>
-            <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10 font-light">
-                Healthy Smiles, Trusted Care. Delivering advanced oral health solutions with a gentle touch.
-            </p>
-            
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="tel:+919999999999" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-blue-200 hover:bg-blue-700 transition-all">Book Appointment</a>
-                <a href="https://wa.me/919999999999" class="bg-[#25D366] text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-green-100 hover:bg-green-600 transition-all flex items-center gap-2">
-                    <span>📱</span> WhatsApp Now
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 container mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Specialized Services</h2>
-            <div class="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="service-card bg-white p-6 rounded-2xl flex items-center gap-4">
-                <div class="bg-blue-50 p-3 rounded-xl text-blue-600 font-bold">01</div>
-                <h3 class="font-semibold text-slate-800 text-lg">Bonding</h3>
-            </div>
-            <div class="service-card bg-white p-6 rounded-2xl flex items-center gap-4">
-                <div class="bg-blue-50 p-3 rounded-xl text-blue-600 font-bold">02</div>
-                <h3 class="font-semibold text-slate-800 text-lg">Check-ups</h3>
-            </div>
-            <div class="service-card bg-white p-6 rounded-2xl flex items-center gap-4">
-                <div class="bg-blue-50 p-3 rounded-xl text-blue-600 font-bold">03</div>
-                <h3 class="font-semibold text-slate-800 text-lg">Cosmetic Procedures</h3>
-            </div>
-            <div class="service-card bg-white p-6 rounded-2xl flex items-center gap-4">
-                <div class="bg-blue-50 p-3 rounded-xl text-blue-600 font-bold">04</div>
-                <h3 class="font-semibold text-slate-800 text-lg">Dental Implants</h3>
-            </div>
-            <div class="service-card bg-white p-6 rounded-2xl flex items-center gap-4">
-                <div class="bg-blue-50 p-3 rounded-xl text-blue-600 font-bold">05</div>
-                <h3 class="font-semibold text-slate-800 text-lg">Dentures & Bridges</h3>
-            </div>
-            <div class="service-card bg-white p-6 rounded-2xl flex items-center gap-4">
-                <div class="bg-blue-50 p-3 rounded-xl text-blue-600 font-bold">06</div>
-                <h3 class="font-semibold text-slate-800 text-lg">Emergency Care</h3>
-            </div>
-            <div class="service-card bg-white p-6 rounded-2xl flex items-center gap-4">
-                <div class="bg-blue-50 p-3 rounded-xl text-blue-600 font-bold">07</div>
-                <h3 class="font-semibold text-slate-800 text-lg">Extractions</h3>
-            </div>
-            <div class="service-card bg-white p-6 rounded-2xl flex items-center gap-4">
-                <div class="bg-blue-50 p-3 rounded-xl text-blue-600 font-bold">08</div>
-                <h3 class="font-semibold text-slate-800 text-lg">Fillings and Sealants</h3>
-            </div>
-            <div class="service-card bg-white p-6 rounded-2xl flex items-center gap-4">
-                <div class="bg-blue-50 p-3 rounded-xl text-blue-600 font-bold">09</div>
-                <h3 class="font-semibold text-slate-800 text-lg">Laser Dentistry</h3>
-            </div>
-            <div class="service-card bg-white p-6 rounded-2xl flex items-center gap-4">
-                <div class="bg-blue-50 p-3 rounded-xl text-blue-600 font-bold">10</div>
-                <h3 class="font-semibold text-slate-800 text-lg">Mouth Guards</h3>
+        <div class="relative z-10 container mx-auto px-6 grid md:grid-cols-2">
+            <div class="max-w-xl">
+                <span class="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-xs font-bold tracking-widest mb-4">BEST IN TOWN</span>
+                <h1 class="text-5xl md:text-7xl font-black text-slate-900 mb-6 leading-tight">
+                    Healthy Smiles, <br><span class="text-gradient">Trusted Care</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+                    Aapki muskurahat hamari priority hai. Experience the most advanced dental treatments with our expert team.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:+919999999999" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-blue-200 hover:bg-blue-700 transition-all text-center">Book Now</a>
+                    <a href="https://wa.me/919999999999" class="bg-[#25D366] text-white px-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-green-600 transition-all shadow-lg">
+                        WhatsApp
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-slate-400 py-12 text-center mt-20">
-        <p>© 2025 Gupta Dental Care. All rights reserved.</p>
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="[attachment_2](attachment)" class="rounded-2xl h-48 w-full object-cover shadow-md" alt="Clinic 1">
+                <img src="[attachment_3](attachment)" class="rounded-2xl h-48 w-full object-cover shadow-md" alt="Clinic 2">
+                <img src="[attachment_4](attachment)" class="rounded-2xl h-48 w-full object-cover shadow-md" alt="Clinic 3">
+                <div class="bg-blue-600 rounded-2xl h-48 flex items-center justify-center p-4 text-white text-center font-bold">
+                    Advanced Medical Equipment
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Our Premium Services</h2>
+                <div class="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="service-card bg-white p-8 rounded-[2rem] border border-slate-100">
+                    <div class="text-3xl mb-4">🦷</div>
+                    <h3 class="font-bold text-xl text-slate-800 mb-2">Dental Implants</h3>
+                    <p class="text-slate-500 text-sm">Permanent solution for missing teeth with a natural look.</p>
+                </div>
+                <div class="service-card bg-white p-8 rounded-[2rem] border border-slate-100">
+                    <div class="text-3xl mb-4">✨</div>
+                    <h3 class="font-bold text-xl text-slate-800 mb-2">Laser Dentistry</h3>
+                    <p class="text-slate-500 text-sm">Painless and fast healing dental procedures using laser.</p>
+                </div>
+                <div class="service-card bg-white p-8 rounded-[2rem] border border-slate-100">
+                    <div class="text-3xl mb-4">💎</div>
+                    <h3 class="font-bold text-xl text-slate-800 mb-2">Cosmetic Procedures</h3>
+                    <p class="text-slate-500 text-sm">Enhancing your smile with modern aesthetic techniques.</p>
+                </div>
+                <div class="service-card bg-white p-8 rounded-[2rem] border border-slate-100">
+                    <div class="text-3xl mb-4">🛠️</div>
+                    <h3 class="font-bold text-xl text-slate-800 mb-2">Fillings & Sealants</h3>
+                    <p class="text-slate-500 text-sm">Top-grade materials to restore and protect your teeth.</p>
+                </div>
+                <div class="service-card bg-white p-8 rounded-[2rem] border border-slate-100">
+                    <div class="text-3xl mb-4">🚑</div>
+                    <h3 class="font-bold text-xl text-slate-800 mb-2">Emergency Care</h3>
+                    <p class="text-slate-500 text-sm">24/7 support for sudden dental pain or injuries.</p>
+                </div>
+                <div class="service-card bg-white p-8 rounded-[2rem] border border-slate-100">
+                    <div class="text-3xl mb-4">🏥</div>
+                    <h3 class="font-bold text-xl text-slate-800 mb-2">Check-ups</h3>
+                    <p class="text-slate-500 text-sm">Routine professional cleaning and complete oral exams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-12 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-4">Gupta Dental Care</h2>
+            <p class="text-slate-400 mb-6">Expert treatment you can trust.</p>
+            <div class="flex justify-center gap-6 mb-8 text-sm uppercase tracking-widest font-bold">
+                <a href="tel:+919999999999" class="hover:text-blue-400">Call Now</a>
+                <span>•</span>
+                <a href="#" class="hover:text-blue-400">Location</a>
+            </div>
+            <div class="text-xs text-slate-500">© 2025 Gupta Dental. All rights reserved.</div>
+        </div>
     </footer>
 
 </body>
 </html>
-
